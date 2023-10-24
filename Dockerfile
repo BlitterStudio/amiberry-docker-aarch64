@@ -1,7 +1,7 @@
 # Image with the requirements to build Amiberry for aarch64
 # Author: Dimitris Panokostas
 #
-# Usage: docker run --rm -it -v <path-to-amiberry-sources>:/build amiberry-docker-aarch64:latest
+# Usage: docker run --rm -it -v <path-to-amiberry-sources>:/build amiberry-debian-aarch64:latest
 #
 
 # If no arg is provided, default to latest
