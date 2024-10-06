@@ -10,4 +10,4 @@ The full image is available on DockerHub: <https://hub.docker.com/repository/doc
 
 `docker run --rm -it -v <dir-you-cloned-amiberry-into>:/build midwan/amiberry-debian-aarch64:latest`
 
-Then you can proceed to compile Amiberry as usual, e.g. `make -j8 PLATFORM=rpi4-64-sdl2`
+Then you can proceed to compile Amiberry with the relevant toolchain file, e.g. `cmake -DCMAKE_TOOLCHAIN_FILE=cmake/Toolchain-aarch64-linux-gnu.cmake -B build && cmake --build build`
