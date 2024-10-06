@@ -1,8 +1,6 @@
 # amiberry-docker-aarch64
 
-A Dockerfile which creates an image, with the requirements to build Amiberry for the `aarch64` platform (e.g. Raspberry Pi 64-bit).
-
-No Dispmanx is supported in this image, only 64-bit SDL2 versions.
+A Dockerfile which creates an image, with the requirements to cross-compile Amiberry for the `aarch64` platform (e.g. Raspberry Pi 64-bit).
 
 The image is based on Debian:latest and includes all Amiberry dependencies (e.g. SDL2, SDL2-image, etc)
 
