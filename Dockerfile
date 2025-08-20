@@ -9,7 +9,7 @@ ARG debian_release=latest
 FROM debian:${debian_release}
 
 LABEL maintainer="Dimitris Panokostas"
-LABEL description="Image with the requirements to cross-compile Amiberry for Fedora AARCH64 (ARM64)"
+LABEL description="Image with the requirements to cross-compile Amiberry for Debian AARCH64 (ARM64)"
 
 RUN dpkg --add-architecture arm64 && \
     apt-get update && \
