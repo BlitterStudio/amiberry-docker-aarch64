@@ -15,7 +15,7 @@ RUN dpkg --add-architecture arm64 && \
     apt-get update && \
     apt-get dist-upgrade -fuy && \
     apt-get install -y --no-install-recommends \
-        autoconf git build-essential cmake ninja-build \
+        autoconf git build-essential cmake file ninja-build \
         gcc-aarch64-linux-gnu g++-aarch64-linux-gnu \
         libsdl2-dev:arm64 libsdl2-ttf-dev:arm64 libsdl2-image-dev:arm64 \
         libpng-dev:arm64 libflac-dev:arm64 libmpg123-dev:arm64 \
