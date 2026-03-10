@@ -18,6 +18,7 @@ RUN dpkg --add-architecture arm64 && \
         autoconf git build-essential cmake file ninja-build \
         gcc-aarch64-linux-gnu g++-aarch64-linux-gnu \
         libsdl2-dev:arm64 libsdl2-ttf-dev:arm64 libsdl2-image-dev:arm64 \
+        libsdl3-dev:arm64 libsdl3-image-dev:arm64 \
         libpng-dev:arm64 libflac-dev:arm64 libmpg123-dev:arm64 \
         libmpeg2-4-dev:arm64 libserialport-dev:arm64 libportmidi-dev:arm64 \
         libenet-dev:arm64 pkgconf:arm64 libpcap-dev:arm64 libzstd-dev:arm64 && \
