@@ -87,5 +87,7 @@ ENV AS=${ARCH}-as
 ENV CC=${ARCH}-gcc
 ENV CXX=${ARCH}-g++
 ENV STRIP=${ARCH}-strip
+ENV PKG_CONFIG_PATH=/usr/local/lib/aarch64-linux-gnu/pkgconfig:/usr/local/share/pkgconfig:/usr/lib/aarch64-linux-gnu/pkgconfig:/usr/share/pkgconfig
+ENV PKG_CONFIG_LIBDIR=/usr/local/lib/aarch64-linux-gnu/pkgconfig:/usr/local/share/pkgconfig:/usr/lib/aarch64-linux-gnu/pkgconfig:/usr/share/pkgconfig
 
 CMD [ "bash" ]
