@@ -17,8 +17,11 @@ ARG sdl3_ref
 ARG sdl3_image_repo
 ARG sdl3_image_ref
 
-LABEL maintainer="Dimitris Panokostas"
-LABEL description="Image with the requirements to cross-compile Amiberry for Debian AARCH64 (ARM64)"
+LABEL org.opencontainers.image.title="Amiberry build environment (Debian aarch64)"
+LABEL org.opencontainers.image.description="Image with the requirements to cross-compile Amiberry for Debian AARCH64 (ARM64)"
+LABEL org.opencontainers.image.authors="Dimitris Panokostas"
+LABEL org.opencontainers.image.source="https://github.com/BlitterStudio/amiberry-docker-aarch64"
+LABEL org.opencontainers.image.licenses="GPL-3.0"
 
 RUN dpkg --add-architecture arm64 && \
     apt-get update && \
