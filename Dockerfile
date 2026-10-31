@@ -36,7 +36,7 @@ RUN dpkg --add-architecture arm64 && \
         libcurl4-openssl-dev:arm64 nlohmann-json3-dev:arm64 \
         libdbus-1-dev:arm64 && \
     if ! apt-get install -y --no-install-recommends libsdl3-dev:arm64 libsdl3-image-dev:arm64; then \
-        sdl3_build_deps='libasound2-dev:arm64 libdbus-1-dev:arm64 libdrm-dev:arm64 libegl1-mesa-dev:arm64 libgbm-dev:arm64 libgl1-mesa-dev:arm64 libgles2-mesa-dev:arm64 libglib2.0-dev:arm64 libibus-1.0-dev:arm64 libjpeg62-turbo-dev:arm64 libpulse-dev:arm64 libsamplerate0-dev:arm64 libsndio-dev:arm64 libtiff-dev:arm64 libudev-dev:arm64 libwayland-dev:arm64 libwebp-dev:arm64 libx11-dev:arm64 libxcursor-dev:arm64 libxext-dev:arm64 libxfixes-dev:arm64 libxi-dev:arm64 libxinerama-dev:arm64 libxkbcommon-dev:arm64 libxrandr-dev:arm64 libxrender-dev:arm64 libxss-dev:arm64 libxt-dev:arm64 libxv-dev:arm64 libxxf86vm-dev:arm64'; \
+        sdl3_build_deps='libasound2-dev:arm64 libdbus-1-dev:arm64 libdrm-dev:arm64 libegl1-mesa-dev:arm64 libgbm-dev:arm64 libgl1-mesa-dev:arm64 libgles2-mesa-dev:arm64 libglib2.0-dev:arm64 libibus-1.0-dev:arm64 libjpeg62-turbo-dev:arm64 libpulse-dev:arm64 libsamplerate0-dev:arm64 libsndio-dev:arm64 libtiff-dev:arm64 libudev-dev:arm64 libwayland-dev:arm64 libwebp-dev:arm64 libx11-dev:arm64 libxcursor-dev:arm64 libxext-dev:arm64 libxfixes-dev:arm64 libxi-dev:arm64 libxinerama-dev:arm64 libxkbcommon-dev:arm64 libxrandr-dev:arm64 libxrender-dev:arm64 libxss-dev:arm64 libxt-dev:arm64 libxtst-dev:arm64 libxv-dev:arm64 libxxf86vm-dev:arm64'; \
         for optional_pkg in libdecor-0-dev:arm64; do \
             if apt-cache show "$optional_pkg" > /dev/null 2>&1; then \
                 sdl3_build_deps="$sdl3_build_deps $optional_pkg"; \
